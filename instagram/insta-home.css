@@ -189,20 +189,20 @@ body {
     height: 80px;
     width: 80px;
     border-radius: 50%;
-    border: 2px solid orangered;
+    /* border: 2px solid orangered; */
     margin: 5px;
 }
 
 /* post design  */
 .one-post{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 40%;
     margin-left: 13%;
     font-family: sans-serif;
     margin-top: 20px;
 }
 .one-post .heading{
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
     display: flex;
     align-items: center;
     position: relative;
@@ -211,7 +211,7 @@ body {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    border: 2px solid orangered;
+    /* border: 2px solid orangered; */
     margin-left: 5px;
     margin-right: 10px;
 }
@@ -224,7 +224,7 @@ body {
     right: 20px;
 }
 .one-post .video-image{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     height: 600px;
     display: flex;
     align-items: center;
