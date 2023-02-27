@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dbd8e038;
+}
+
+/* utility that could change  */
+.blue-text{
+    color: rgb(0, 123, 255);
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.name-text{
+    font-weight: 500;
+    font-family: sans-serif;
+    
+}
+.name-below-text{
+    font-size: 13px;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin-top: 3px;
+}
+
+/* header and navigation  */
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Grand Hotel', cursive;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+
+.logo h2 {
+    font-size: 2rem;
+}
+
+.search-box input {
+    background-image: url('img/magnifying-glass-solid.svg');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 10px;
+    width: 250px;
+    height: 35px;
+    font-size: 1rem;
+    text-indent: 20%;
+    border: none;
+    background-color: rgba(136, 138, 122, 0.387);
+    border-radius: 10px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.icons i {
+    padding: 0px 13px;
+}
+
+.icons img {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-left: 13px;
+}
+
+/* aside to the left  */
+.aside-left {
+    position: fixed;
+    height: 100vh;
+    width: 30%;
+    right: 15%;
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+
+.main-icon {
+    display: flex;
+    align-items: center;
+}
+
+.main-icon img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin:5px 20px;
+}
+.main-icon .blue-text{
+    margin-left: 100px;
+}
+.suggest{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.suggest .para-suggest{
+    margin:5px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 0.5;
+}
+.suggest .para-side{
+    margin-right: 60px;
+    font-size: 13px;
+    font-weight: 700;
+    opacity: 0.5;
+}
+
+/* other follows and suggestions  */
+.other-follow .items{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.other-follow img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin:10px 20px;
+}
+.other-follow .items .text{
+    margin-left: 13px;
+}
+.other-follow .items .blue-text{
+    position: absolute;
+    right: 60px;
+}
+
+/* footer in aside  */
+
+.footer{
+    font-weight: bold;
+}
+.footer .links{
+    margin-left: 20px;
+}
+.footer .links a{
+    
+    text-decoration: none;
+    color: black;
+    opacity: 0.4;
+    font-size: 13px;
+}
+.footer .links a:hover{
+    text-decoration: underline;
+}
+.footer .end-credit{
+    margin-top: 30px;
+    font-size: 13px;
+    opacity: 0.4;
+    margin-left: 20px;
+}
+
+/* stories section  */
+.stories-section{
+    display: flex;
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 13%;
+    font-family: sans-serif;
+    font-size: 13px;
+    padding: 0px 5px;
+}
+.stories-section .profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 20%;
+}
+.stories-section .profile img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid orangered;
+    margin: 5px;
+}
+
+/* post design  */
+.one-post{
+    border: 2px solid red;
+    width: 40%;
+    margin-left: 13%;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+.one-post .heading{
+    border: 2px solid greenyellow;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.one-post .heading img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid orangered;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.one-post .heading .text .name-below-text{
+    font-size: 11px;
+    opacity: 1;
+}
+.one-post .heading .fa-solid{
+    position: absolute;
+    right: 20px;
+}
+.one-post .video-image{
+    border: 2px solid blue;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    background: #000;
+}
