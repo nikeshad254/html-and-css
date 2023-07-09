@@ -10,6 +10,7 @@ let signs = {
 Array.from(buttons).forEach((btn) => {
     console.log("hey")
     btn.addEventListener("click", (e)=>{
+        console.log(e.target.id);
 
         if(e.target.id === "equal"){
             let newstr = eval(str);
@@ -23,7 +24,11 @@ Array.from(buttons).forEach((btn) => {
         }
         else if(e.target.id === "AC"){
             str = "";
+            display.innerHTML = str;
             
+        }
+        else if(e.target.id === "sqrt"){
+            str += "^2";
         }
         else if(e.target.id === "mult"){
             str += "*";
@@ -34,10 +39,10 @@ Array.from(buttons).forEach((btn) => {
             display.innerHTML = str;
         }
         else{
-            console.log(e.target.id);
             str += e.target.innerHTML;
             display.innerHTML = str;
         }
+        
     })
 });
 
